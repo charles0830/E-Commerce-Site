@@ -6,7 +6,7 @@ import styled from "styled-components";
 export default class Navbar extends Component{
     render() {
         return (
-            <nav className="navbar navbar-expand-sm navbar-dark px-sm=5 bg-primary">
+            <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm=5">
                 {/*
                 https://www.iconfinder.com/icons/1243689/call_phone_icon
                 Creative Commons (Attribution 3.0 Unported);
@@ -26,7 +26,7 @@ export default class Navbar extends Component{
                         <span className="mr-2"><i className='fas fa-cart-plus pr-2'/> My Cart</span>
                     </ButtonContainer>
                 </Link>
-            </nav>
+            </NavWrapper>
         )
     }
 }
@@ -48,5 +48,13 @@ const ButtonContainer = styled.button`
   }
   &:focus{
     outline: none;
+  }
+`
+const NavWrapper = styled.nav`
+  background-color: var(--mainBlue);
+  .nav-link{
+    color: var(--mainWhite) !important;
+    font-size: 1.3rem;
+    text-transform: capitalize !important;
   }
 `
