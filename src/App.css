@@ -15,6 +15,9 @@ body{
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
+.text-white{
+  color: var(--mainWhite);
+}
 .text-blue{
   color: var(--mainBlue);
 }
