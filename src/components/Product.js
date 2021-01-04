@@ -20,7 +20,7 @@ class Product extends Component {
                             }
                         </button>
                     </div>
-                    <div className="cart-footer d-flex justify-content-between p-3">
+                    <div className="card-footer d-flex justify-content-between p-3">
                         <p className="align-self-center mb-0">
                             {title}
                         </p>
@@ -62,7 +62,8 @@ const ProductWrapper = styled.div`
     }
 
     .card-footer {
-      background: var(--lightBlue);
+      background : rgba(247, 247, 247) ;
+      //background: var(--lightBlue);
     }
   }
 

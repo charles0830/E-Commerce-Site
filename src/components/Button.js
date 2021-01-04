@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ButtonContainer = styled.button`
   text-transform: capitalize;
   font-size: 1.4rem;
-  background: var(--mainBlue);
+  background: ${props => props.cart? "var(--mainYellow)": "var(--mainBlue)"};
   border: 0.05rem solid var(--mainWhite);
   color: var(--mainWhite);
   border-radius: 0.5rem;
@@ -13,8 +13,8 @@ export const ButtonContainer = styled.button`
   transition: all 0.2s ease-in-out;
   &:hover{
     background: var(--mainWhite);
-    color: var(--mainBlue);
-    border: 0.05rem solid var(--mainBlue);
+    color: ${props => props.cart? "var(--mainYellow)": "var(--mainBlue)"};
+    border: 0.05rem solid ${props => props.cart? "var(--mainYellow)": "var(--mainBlue)"};
   }
   &:focus{
     outline: none;
