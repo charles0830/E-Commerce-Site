@@ -62,7 +62,6 @@ const ProductWrapper = styled.div`
     }
 
     .card-footer {
-      //background: rgba(247, 247, 247);
       background: var(--lightBlue);
     }
   }
