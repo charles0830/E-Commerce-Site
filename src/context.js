@@ -36,7 +36,9 @@ class ProductProvider extends Component {
     };
 
     addToCart = (id)=>{
-        console.log(id);
+        let tempProduct = [...this.state.products];
+        const index = tempProduct.indexOf(this.getItem(id));
+        const product = tempProduct[index];
     }
     render() {
         return (

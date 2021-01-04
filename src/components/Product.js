@@ -90,7 +90,7 @@ const ProductWrapper = styled.div`
     bottom: 0;
     right: 0;
     padding: 0.2rem 0.4rem;
-    background: var(--lightBlue);
+    background: var(--mainBlue);
     border: none;
     color: var(--mainWhite);
     font-size: 1.4rem;
@@ -104,7 +104,7 @@ const ProductWrapper = styled.div`
   }
 
   .cart-btn:hover{
-    color: var(--lightBlue);
+    color: var(--mainBlue);
     background-color: var(--mainWhite);
     cursor: pointer;
   }
