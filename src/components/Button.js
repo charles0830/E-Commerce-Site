@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ButtonContainer = styled.button`
   text-transform: capitalize;
   font-size: 1.4rem;
-  background: transparent;
+  background: var(--mainBlue);
   border: 0.05rem solid var(--mainWhite);
   color: var(--mainWhite);
   border-radius: 0.5rem;
@@ -14,6 +14,7 @@ export const ButtonContainer = styled.button`
   &:hover{
     background: var(--mainWhite);
     color: var(--mainBlue);
+    border: 0.05rem solid var(--mainBlue);
   }
   &:focus{
     outline: none;
