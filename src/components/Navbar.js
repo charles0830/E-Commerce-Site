@@ -44,7 +44,7 @@ const ButtonContainer = styled.button`
   transition: all 0.2s ease-in-out;
   &:hover{
     background: var(--mainWhite);
-    color: var(--lightBlue);
+    color: var(--mainBlue);
   }
   &:focus{
     outline: none;
