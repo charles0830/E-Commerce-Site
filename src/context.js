@@ -73,10 +73,17 @@ class ProductProvider extends Component {
 
     }
     removeItem = (id)=>{
-
+        this.state.cart.find((item) => {
+            if (item.id===id){
+                this.state.cart.delete(item);
+            }
+        }
+        )
     }
     clearCart = ()=>{
-
+        this.setState(()=>{
+            return {cart:[]};
+        })
     }
     addTotals = ()=>{
         let subtotal = 0;
