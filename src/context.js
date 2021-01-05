@@ -67,9 +67,34 @@ class ProductProvider extends Component {
         });
     }
     increment = (id)=>{
-
+        let tempCart = [...this.state.cart];
+        const selectedProduct = tempCart.find(item=> item.id===id );
+        const index = tempCart.indexOf(selectedProduct);
+        const product = tempCart[index];
+        product.count+=1;
+        product.total = product.count * product.price;
+        this.setState(()=>{
+            return {cart:[...tempCart]};
+        },()=>{
+            this.addTotals();
+        })
     }
     decrement = (id)=>{
+        let tempCart = [...this.state.cart];
+        const selectedProduct = tempCart.find(item=> item.id===id );
+        const index = tempCart.indexOf(selectedProduct);
+        const product = tempCart[index];
+        if(product.count>1) {
+            product.count -= 1;
+            product.total = product.count * product.price;
+            this.setState(()=>{
+                return {cart:[...tempCart]};
+            },()=>{
+                this.addTotals();
+            })
+        }else if (product.count===1){
+            this.removeItem(id);
+        }
 
     }
     removeItem = (id)=>{
