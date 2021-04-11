@@ -38,7 +38,7 @@ export const storeProducts = [
   },
   {
     id: 4,
-    title: "Vivo V7",
+    title: "Vivo V17",
     img: "img/product-4.png",
     price: 18,
     company: "htc",
