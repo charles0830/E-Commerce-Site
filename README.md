@@ -72,3 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <br>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ab63462d-8118-4b32-bce8-050f20d23e2e/deploy-status)](https://e-commerce-site-phone.netlify.app/)
+<a href="https://www.buymeacoffee.com/chberry830"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="60"></a>
